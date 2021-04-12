@@ -2,7 +2,6 @@ require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
 const morgan = require('morgan')
-const pool = require('./dbConfig')
 const app = express()
 app.use(morgan('combined'))
 app.use(express.urlencoded({
